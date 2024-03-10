@@ -1,4 +1,5 @@
-export const getGifs = async ( category, limit = 5 ) => {
+
+const getGifs = async ( category, limit = 5 ) => {
 
   const api_key = 'mLhnKLOuVIp0CVC8qcHUQg2qLQqzjuGZ';
 
@@ -18,3 +19,5 @@ export const getGifs = async ( category, limit = 5 ) => {
 
   return gifs;
 }
+
+export default getGifs;

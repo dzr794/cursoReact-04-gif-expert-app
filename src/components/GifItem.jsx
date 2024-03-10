@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types'
 
-export const GifItem = ({url, title}) => {
+const GifItem = ({url, title}) => {
   return (
     <div className="card">
       <img src={url} alt={title} />
@@ -7,3 +8,15 @@ export const GifItem = ({url, title}) => {
     </div>
   )
 }
+
+GifItem.propTypes = {
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
+
+// GifItem.defaultProps = {
+//   url: 'No URL given',
+//   title: "No title given",
+// }
+
+export default GifItem;
